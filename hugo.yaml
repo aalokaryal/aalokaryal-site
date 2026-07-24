@@ -1,7 +1,7 @@
 baseURL: "https://aalokaryal.com.np/"
 languageCode: "en-us"
 title: "Aalok Aryal"
-theme: hugo-profile
+
 
 # Multilingual configuration
 defaultContentLanguage: "en"
