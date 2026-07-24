@@ -4,9 +4,12 @@ Personal portfolio and CV website for **Aalok Aryal**, Electrical Engineering st
 
 🔗 **Live site:** [aalokaryal.com.np](https://aalokaryal.com.np)
 
+**Status:** This project is under active development. Content, features, and design are subject to change as the site continues to evolve.
+
+
 ## About
 
-This site showcases my academic projects, experience, and skills as an electrical engineering student with a focus on power systems and renewable energy — including hydropower and transmission line design work, and other academic and hobby projects.
+This site showcases my academic projects, experience, and skills as an electrical engineering student with a focus on power systems and renewable energy — including hydropower and transmission line design work, and other academic and hobby projects. 
 
 ## Built With
 
