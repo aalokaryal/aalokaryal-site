@@ -6,7 +6,7 @@ Personal portfolio and CV website for **Aalok Aryal**, Electrical Engineering st
 
 ## About
 
-This site showcases my academic projects, experience, and skills as an electrical engineering student with a focus on power systems and renewable energy — including hydropower and transmission line design work, and a data center power modeling project.
+This site showcases my academic projects, experience, and skills as an electrical engineering student with a focus on power systems and renewable energy — including hydropower and transmission line design work, and other academic and hobby projects.
 
 ## Built With
 
