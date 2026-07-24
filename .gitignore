@@ -1,0 +1,8 @@
+public/
+resources/_gen/
+.hugo_build.lock
+node_modules/
+hugo_stats.json
+hugo.exe
+hugo.darwin
+hugo.linux

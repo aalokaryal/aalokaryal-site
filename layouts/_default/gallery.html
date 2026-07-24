@@ -1,0 +1,43 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+{{ if .Params.viewer | default true }}
+<link rel="stylesheet" href="{{ (printf "%scss/gallery.css" (.Site.Params.staticPath | default "")) | relURL }}">
+<link rel="stylesheet" href="{{ (printf "%sviewer/viewer.min.css" (.Site.Params.staticPath | default "")) | relURL }}">
+<script src="{{ (printf "%sviewer/viewer.min.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+{{ end }}
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container pt-5" id="list-page">
+    <h2 class="text-center pb-2">{{.Title}}</h2>
+    <h6 class="text-center">{{ .Params.description | emojify }}</h6>
+    <div class="row p-4">
+        {{ .Content | emojify }}
+    </div>
+    <div class="masonry-gallery">
+        {{ range .Params.galleryImages }}
+        <div class="masonry-item">
+            <img class="{{if $.Params.viewer | default true}}viewer-enabled-image{{end}}" src="{{ .src }}">
+            {{ if .caption }}
+            <p class="gallery-caption">{{ .caption }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ if .Params.viewer | default true }}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var viewer = new Viewer(document.getElementById('list-page'), {
+            ...{{ .Params.viewerOptions }}
+        });
+    });
+</script>
+{{ end }}
+
+{{ end }}
